@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mortgage</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="mortgage">
+      <div class="mortgage__container">
+        <h1 class="mortgage__head">MORTGAGE</h1>
+        <div class="mortgage__box" id="root"></div>
+      </div>
+      <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal">
+          <svg class="modal-close" data-close-modal>
+            <use href="./img/symbol-defs.svg#close-modal"></use>
+          </svg>
+          <h2 class="mortgage__title">Create a new bank</h2>
+          <form class="mortgage__form" id="form">
+            <label class="mortgage__form-options">
+              <span class="mortgage__form-title">Bank Name</span>
+              <input type="text" class="mortgage__form-input" name="name" />
+            </label>
+            <label class="mortgage__form-options">
+              <span class="mortgage__form-title">interestRate</span>
+              <input
+                type="number"
+                class="mortgage__form-input"
+                name="interestRate"
+              />
+            </label>
+            <label class="mortgage__form-options">
+              <span class="mortgage__form-title">maxLoan</span>
+              <input
+                type="number"
+                class="mortgage__form-input"
+                name="maxLoan"
+              />
+            </label>
+            <label class="mortgage__form-options">
+              <span class="mortgage__form-title">minPayment</span>
+              <input
+                type="number"
+                class="mortgage__form-input"
+                name="minPayment"
+              />
+            </label>
+            <label class="mortgage__form-options">
+              <span class="mortgage__form-title">loanTerm</span>
+              <input
+                type="number"
+                class="mortgage__form-input"
+                name="loanTerm"
+              />
+            </label>
+            <button type="submit" class="mortgage__form-submit" data-submit>
+              Create
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
